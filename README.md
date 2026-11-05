@@ -26,13 +26,11 @@ Page Down and Page Up works too.
 
 ## Publish it
 
-- **GitHub Pages:** `.github/workflows/pages.yml` publishes the site on every push to `main`.
-  Turn it on once: **Settings → Pages → Build and deployment → Source: GitHub Actions**. The page
-  appears at `https://leulol.github.io/<repository-name>/`.
+- **GitHub Pages** (on): **Settings → Pages → Deploy from a branch → `main` / root**. Every push
+  to `main` republishes it at https://leulol.github.io/lebawi-landing-page/. `.nojekyll` tells
+  GitHub to serve the files as they are, without its Jekyll site builder.
 - **Vercel** (optional): import the repository at vercel.com, Framework Preset *Other*, Deploy.
   `vercel.json` and `.vercelignore` are set up for it.
-
-Both publish only the page and what it loads, not `tools/` or these notes.
 
 ## How it's built
 
