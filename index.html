@@ -1,0 +1,340 @@
+<!doctype html>
+<!--
+  The pitch for Lebawi SMS, read on its own or presented (press P).
+  Problem, then six fixes, then where we'd start, then "One record. Five views."
+
+  The crest tells the story: whole on the title, in pieces beside the problem, one ለ back for
+  each fix, and whole again when it slides into the last section. pitch.js moves it; the CSS
+  animates transform and opacity only. Without JavaScript the crest simply stays whole.
+
+  A static page: loads nothing from the internet, and every name and number in the screenshots
+  is fictional demo data from the app (Leulol/lebawi-sms). What it may claim: README.md.
+  The crest is traced from the school's PNG in Leulol/lebawi-pitch: one ለ is the path id="le"
+  below, and the crest is that ለ five times, 72° apart.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lebawi SMS · proposal</title>
+<meta name="description" content="A proposal to Lebawi International Academy: attendance, follow-up, grades, report cards and announcements on one shared record, starting with grade 7.">
+<meta name="theme-color" content="#0d0a16">
+<link rel="icon" href="crest.svg" type="image/svg+xml">
+<link rel="stylesheet" href="pitch.css">
+</head>
+<body>
+<a class="skip" href="#problem">Skip to the problem</a>
+
+<svg width="0" height="0" class="defs" aria-hidden="true" focusable="false">
+  <defs><path id="le" d="M-25.42 -13.78C-25.48 -13.98 -25.52 -16.58 -25.52 -19.55C-25.51 -24.53 -25.48 -25.09 -25.15 -26.57L-24.80 -28.19L-25.12 -28.84C-25.41 -29.42 -25.44 -29.78 -25.42 -32.39C-25.41 -33.99 -25.32 -36.14 -25.23 -37.16C-24.87 -40.92 -24.73 -42.18 -24.66 -42.30C-24.61 -42.37 -24.46 -43.15 -24.32 -44.03C-23.72 -47.73 -21.91 -53.95 -20.34 -57.63C-18.69 -61.52 -15.77 -66.83 -12.94 -71.08C-10.48 -74.77 -7.86 -78.60 -7.57 -78.93C-7.13 -79.43 -7.21 -80.06 -7.84 -81.11C-8.66 -82.46 -9.28 -83.89 -9.81 -85.64C-10.23 -87.07 -10.26 -87.33 -10.25 -90.07C-10.24 -92.76 -10.21 -93.08 -9.80 -94.42C-9.25 -96.22 -8.27 -98.09 -7.43 -98.98C-6.84 -99.61 -6.70 -99.67 -5.57 -99.83C-3.82 -100.07 -0.62 -100.05 -0.27 -99.80C-0.01 -99.60 -0.01 -99.52 -0.40 -98.50C-0.75 -97.58 -0.83 -97.02 -0.91 -95.03C-1.06 -91.53 -0.61 -89.70 1.25 -86.36C1.90 -85.19 2.58 -84.37 4.89 -81.91C8.15 -78.46 9.57 -76.74 11.70 -73.67C14.75 -69.27 17.42 -64.40 19.62 -59.22C20.87 -56.30 22.94 -50.36 22.94 -49.69C22.94 -49.49 23.08 -48.92 23.25 -48.42C23.65 -47.27 24.45 -43.30 24.80 -40.79C25.15 -38.34 25.47 -35.07 25.38 -34.98C25.35 -34.94 25.33 -33.76 25.35 -32.35C25.37 -30.39 25.32 -29.62 25.12 -29.05C24.88 -28.34 24.89 -28.20 25.28 -26.39C25.66 -24.57 25.68 -24.22 25.68 -19.14C25.68 -13.58 25.66 -13.41 25.00 -13.41C24.61 -13.41 21.12 -16.50 20.02 -17.81C18.97 -19.06 17.97 -20.58 17.28 -21.98L16.76 -23.04L17.26 -23.77C17.75 -24.50 17.75 -24.51 17.53 -25.44C17.37 -26.14 17.16 -26.53 16.67 -27.04C15.46 -28.29 15.31 -28.80 15.16 -31.99C14.88 -37.94 14.29 -41.66 12.75 -47.10C11.37 -52.02 8.86 -58.08 6.51 -62.18C5.35 -64.19 4.42 -65.68 3.20 -67.47C1.01 -70.66 0.42 -71.41 0.14 -71.37C-0.18 -71.32 -5.28 -63.77 -7.03 -60.75C-10.96 -54.00 -13.41 -47.03 -14.38 -39.85C-14.71 -37.34 -15.09 -32.23 -14.95 -32.00C-14.79 -31.73 -15.19 -29.34 -15.52 -28.65C-15.71 -28.27 -16.18 -27.61 -16.57 -27.17C-17.15 -26.52 -17.30 -26.21 -17.46 -25.35C-17.65 -24.32 -17.65 -24.30 -17.16 -23.59L-16.67 -22.87L-17.16 -21.90C-17.98 -20.25 -19.35 -18.32 -20.70 -16.90C-22.02 -15.50 -24.65 -13.41 -25.08 -13.41C-25.22 -13.41 -25.37 -13.58 -25.42 -13.78Z"/></defs>
+</svg>
+
+<header class="topbar">
+  <a class="topbar-brand" href="#top" aria-label="Lebawi SMS, back to the start">
+    <svg class="crest-mini" viewBox="-104 -104 208 196" aria-hidden="true">
+      <use href="#le"/><use href="#le" transform="rotate(72)"/><use href="#le" transform="rotate(144)"/><use href="#le" transform="rotate(216)"/><use href="#le" transform="rotate(288)"/>
+    </svg>
+    <span>Lebawi SMS</span>
+  </a>
+  <nav class="topbar-nav" aria-label="Sections">
+    <a href="#problem">Problem</a>
+    <a href="#attendance">Solution</a>
+    <a href="#start">Grade 7</a>
+    <a href="#one-record">One record</a>
+  </nav>
+  <button class="btn btn-small btn-ghost" type="button" id="present-toggle" aria-pressed="false">Present <kbd>P</kbd></button>
+</header>
+
+<main>
+
+<!-- Title -->
+<section class="slide hero" id="top" data-title="Lebawi SMS">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="lockup">
+        <svg class="crest" viewBox="-104 -104 208 196" role="img" aria-label="The Lebawi crest: five ለ">
+          <g transform="rotate(0)"><g class="le" style="--i:0"><use href="#le"/></g></g>
+          <g transform="rotate(72)"><g class="le" style="--i:1"><use href="#le"/></g></g>
+          <g transform="rotate(144)"><g class="le" style="--i:2"><use href="#le"/></g></g>
+          <g transform="rotate(216)"><g class="le" style="--i:3"><use href="#le"/></g></g>
+          <g transform="rotate(288)"><g class="le" style="--i:4"><use href="#le"/></g></g>
+        </svg>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <span class="lockup-text"><span class="lockup-small">Lebawi International Academy</span><span class="lockup-big">One school record</span></span>
+      </div>
+      <p class="eyebrow">A proposal for Lebawi International Academy</p>
+      <h1>Lebawi SMS</h1>
+      <p class="lede">Attendance, calls home, grades and school news, on <strong>one record</strong>.
+        Each person sees their part.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#problem">See the problem <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#one-record">One record</a>
+      </div>
+    </div>
+    <figure class="hero-visual">
+      <div class="frame">
+        <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">lebawi · school server</span></div>
+        <img src="screens/morning-glance.png" width="1280" height="800"
+             alt="The director's morning glance: 97.9 % present today, 4 absent, 0 registers missing, 2 approvals waiting; attendance by grade, morning registers, mean grades by department, and chronic absentees.">
+      </div>
+      <figcaption class="callout">The director's morning, on one screen</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <dl class="stats">
+      <div><dt>School groups, one record</dt><dd>5</dd></div>
+      <div><dt>The morning register</dt><dd>≈ 30 s</dd></div>
+      <div><dt>Alert per child per day, absence only</dt><dd>1</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- The story: the crest on the left comes apart, then back together one ለ at a time -->
+<div class="story">
+  <div class="stage" aria-hidden="true">
+    <div class="stage-crest" id="stage-crest">
+      <svg viewBox="-190 -190 380 380">
+        <g transform="rotate(0)"><g class="piece" data-le="1" style="--dx:-26px;--dy:-64px;--spin:-38deg"><use href="#le"/></g></g>
+        <g transform="rotate(72)"><g class="piece" data-le="2" style="--dx:30px;--dy:-78px;--spin:42deg"><use href="#le"/></g></g>
+        <g transform="rotate(144)"><g class="piece" data-le="3" style="--dx:-34px;--dy:-58px;--spin:-52deg"><use href="#le"/></g></g>
+        <g transform="rotate(216)"><g class="piece" data-le="4" style="--dx:18px;--dy:-72px;--spin:30deg"><use href="#le"/></g></g>
+        <g transform="rotate(288)"><g class="piece" data-le="5" style="--dx:34px;--dy:-66px;--spin:-26deg"><use href="#le"/></g></g>
+      </svg>
+    </div>
+    <p class="stage-label" id="stage-label">Lebawi</p>
+  </div>
+
+  <div class="steps">
+
+    <section class="slide step" id="problem" data-title="The problem" data-home="" data-label="Five places">
+      <p class="eyebrow">The problem</p>
+      <h2>The same morning, kept in five places.</h2>
+      <p class="lede">Each job works. Nothing connects them, so nobody sees the whole picture.</p>
+      <ol class="problems">
+        <li><span class="p-n">01</span><h3>Attendance</h3><p>The 08:15 list is on paper.</p></li>
+        <li><span class="p-n">02</span><h3>Reaching families</h3><p>Parents hear only if someone gets through on the phone.</p></li>
+        <li><span class="p-n">03</span><h3>Follow-up</h3><p>Calls and excuses live in one person's notebook.</p></li>
+        <li><span class="p-n">04</span><h3>Grades</h3><p>Scores and report cards are kept apart from everything else. <span class="tag">To confirm</span></p></li>
+        <li><span class="p-n">05</span><h3>Announcements</h3><p>All news goes out on one channel, to everyone.</p></li>
+        <li><span class="p-n">06</span><h3>The whole picture</h3><p>Nobody sees the whole morning at once.</p></li>
+      </ol>
+    </section>
+
+    <section class="slide step fix" id="attendance" data-title="01 · Attendance" data-home="2" data-lit="2" data-label="Teachers">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">01 · Attendance</p>
+          <h2>The register takes 30 seconds.</h2>
+          <p class="today"><span>Today</span>The 08:15 list is on paper.</p>
+          <ul class="ticks">
+            <li>One register a day, by the <strong>homeroom teacher</strong>.</li>
+            <li>Everyone starts <strong>present</strong>: mark the few exceptions, press <kbd>Enter</kbd>.</li>
+            <li>Every mark, and every change, is kept.</li>
+          </ul>
+        </div>
+        <figure class="fix-visual frame">
+          <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Teacher · morning register</span></div>
+          <img src="screens/register-abel-absent.png" width="1280" height="800" loading="lazy"
+               alt="7A's morning register: 24 students, everyone starts as present, Abel Tadesse marked absent. The submit bar says only absence sends the family an alert.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide step fix" id="alerts" data-title="02 · Reaching families" data-home="2,3" data-lit="3" data-label="Parents">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">02 · Reaching families</p>
+          <h2>Parents hear within minutes.</h2>
+          <p class="today"><span>Today</span>Parents hear only if someone gets through on the phone.</p>
+          <ul class="ticks">
+            <li>A <strong>Telegram alert</strong> as soon as the register is in.</li>
+            <li><strong>Absence only</strong>, at most once a day per child.</li>
+            <li>In <strong>English or Amharic</strong>, as the parent chooses.</li>
+          </ul>
+          <p class="note">Amharic wording to be checked by a native speaker.</p>
+        </div>
+        <div class="fix-visual phones">
+          <div class="phone" role="img" aria-label="A Telegram alert from the school's bot to Abel's mother, in English and in Amharic.">
+            <div class="phone-bar"><span>Lebawi International Academy</span><span class="muted">bot</span></div>
+            <div class="chat">
+              <p class="bubble">Lebawi: Abel was marked absent at the morning register, Thu 05 Nov at 10:30. Reply here if there's a reason.</p>
+              <p class="bubble" lang="am">Lebawi: Abel፦ Thu 05 Nov 10:30፣ የጠዋት ስም ጥሪ — ቀሪ። ምክንያት ካለ እዚህ ይመልሱ።</p>
+            </div>
+          </div>
+          <img class="phone-shot" src="screens/parent-home.png" width="390" height="844" loading="lazy"
+               alt="Abel's mother's page on her phone: Abel Tadesse, 7A, absence today excused.">
+        </div>
+      </div>
+    </section>
+
+    <section class="slide step fix" id="follow-up" data-title="03 · Follow-up" data-home="2,3,4" data-lit="4" data-label="Unit leaders">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">03 · Follow-up</p>
+          <h2>Every call, in one place.</h2>
+          <p class="today"><span>Today</span>Calls and excuses live in one person's notebook.</p>
+          <ul class="ticks">
+            <li>The <strong>unit leader</strong> sees today's absentees, families not yet reached first.</li>
+            <li>Press <kbd>/</kbd>, type a name: the <strong>whole family</strong> on one card.</li>
+            <li>Record the call. <strong>Excuse</strong> the absence.</li>
+          </ul>
+        </div>
+        <div class="fix-visual stack">
+          <div class="frame">
+            <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Unit leader · today</span></div>
+            <img src="screens/unit-leader-today.png" width="1280" height="800" loading="lazy"
+                 alt="The unit leader's list of today's absentees in grades 5 to 8, with families not yet reached first.">
+          </div>
+          <div class="frame frame-back">
+            <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Family card</span></div>
+            <img src="screens/family-card.png" width="1280" height="897" loading="lazy"
+                 alt="The Tadesse family card: both guardians, both children, the mother's message, and the call being recorded with Excuse ticked.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide step fix" id="grades" data-title="04 · Grades" data-home="1,2,3,4" data-lit="1" data-label="Students">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">04 · Grades and report cards</p>
+          <h2>Scores in one grid. Report cards from the same record.</h2>
+          <p class="today"><span>Today</span>Scores and report cards are kept apart from everything else. <span class="tag">To confirm</span></p>
+          <ul class="ticks">
+            <li>Teachers enter scores in <strong>one grid</strong>, from the keyboard.</li>
+            <li>Families see only what the teacher <strong>publishes</strong>.</li>
+            <li>Report cards go home when the <strong>director releases</strong> them.</li>
+          </ul>
+        </div>
+        <div class="fix-visual stack">
+          <div class="frame">
+            <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Teacher · grades</span></div>
+            <img src="screens/grade-entry.png" width="1280" height="800" loading="lazy"
+                 alt="7A General Science midterm: one grid of students with points and percentages, and a Save scores button.">
+          </div>
+          <div class="frame frame-back">
+            <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Parent · report card</span></div>
+            <img src="screens/report-card.png" width="1280" height="800" loading="lazy"
+                 alt="Abel Tadesse's Trimester 1 report card: the average in each subject, and days absent this term.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide step fix" id="announcements" data-title="05 · Announcements" data-home="1,2,3,4,5" data-lit="5" data-label="School staff">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">05 · Announcements</p>
+          <h2>Written once. Seen by the right people.</h2>
+          <p class="today"><span>Today</span>All news goes out on one channel, to everyone.</p>
+          <ul class="ticks">
+            <li>A teacher's notice reaches <strong>only their section</strong>.</li>
+            <li>Whole-school news waits for the <strong>director</strong>, then reaches every page and the channel.</li>
+          </ul>
+        </div>
+        <figure class="fix-visual frame">
+          <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Director · approvals</span></div>
+          <img src="screens/approvals.png" width="1280" height="800" loading="lazy"
+               alt="Approvals: the secretary's whole-school announcement, with Approve and publish, and 7A's report-card release.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide step fix" id="overview" data-title="06 · The whole picture" data-home="1,2,3,4,5" data-label="The whole school">
+      <div class="fix-grid">
+        <div class="fix-text">
+          <p class="eyebrow">06 · The whole picture</p>
+          <h2>The director's morning, on one screen.</h2>
+          <p class="today"><span>Today</span>Nobody sees the whole morning at once.</p>
+          <ul class="ticks">
+            <li>Attendance by grade, and any <strong>missing register</strong>.</li>
+            <li>Students absent on <strong>10 % or more</strong> of school days.</li>
+            <li>Grades by department, and what's <strong>waiting for approval</strong>.</li>
+          </ul>
+        </div>
+        <figure class="fix-visual frame">
+          <div class="frame-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="url">Director · morning glance</span></div>
+          <img src="screens/morning-glance.png" width="1280" height="800" loading="lazy"
+               alt="Morning glance: attendance by grade, registers taken, grades by department, chronic absentees and approvals waiting.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide step" id="trust" data-title="07 · Trust" data-home="1,2,3,4,5" data-label="Kept safe">
+      <p class="eyebrow">07 · Trust</p>
+      <h2>Safe with children's records.</h2>
+      <ul class="cards">
+        <li><h3>The school's own server</h3><p>Records stay at the school. Only alert and notice texts go out, through Telegram.</p></li>
+        <li><h3>IT holds the keys</h3><p>The builder works on made-up data only, never real passwords.</p></li>
+        <li><h3>Every change is kept</h3><p>Who changed a mark or a score, when, and from what. Nobody can erase it.</p></li>
+        <li><h3>Each sees their part</h3><p>A teacher their sections, a parent their own children.</p></li>
+      </ul>
+    </section>
+
+    <section class="slide step" id="start" data-title="Grade 7 first" data-home="1,2,3,4,5" data-label="Grade 7 first">
+      <p class="eyebrow">Where we'd start</p>
+      <h2>Grade 7 first.</h2>
+      <p class="lede">We'd like to start with one grade-7 section, with the paper list running alongside.
+        Grade 7 sits no model exam and no Pearson exit exam, so a mistake there is cheap to fix and
+        never touches a national result. One section is about 25 students, small enough to check every
+        record by hand against the class list. Once it works there, it grows one grade at a time, and
+        high school comes last.</p>
+    </section>
+
+    <!-- One record. Five views. The crest slides over from the left and lands here. -->
+    <section class="slide step" id="one-record" data-title="One record. Five views." data-home="1,2,3,4,5" data-label="">
+      <div class="solution-grid">
+        <div>
+          <p class="eyebrow">The answer</p>
+          <h2>One record. Five views.</h2>
+          <p class="lede">Written once, read by everyone who needs it.</p>
+          <ol class="groups" id="groups">
+            <li data-le="1"><span class="g-n">1</span><div><strong>Students</strong><span>Timetable, tests ahead, published grades. At home.</span></div></li>
+            <li data-le="2"><span class="g-n">2</span><div><strong>Teachers</strong><span>The register, scores, notices to their sections.</span></div></li>
+            <li data-le="3"><span class="g-n">3</span><div><strong>Parents</strong><span>The alert, attendance, grades, report cards.</span></div></li>
+            <li data-le="4"><span class="g-n">4</span><div><strong>Officials</strong><span>Unit leaders follow up; the director sees all and approves. <span class="tag">To confirm</span></span></div></li>
+            <li data-le="5"><span class="g-n">5</span><div><strong>School staff</strong><span>The secretary writes once; it reaches everyone.</span></div></li>
+          </ol>
+        </div>
+        <div class="wheel" aria-hidden="true">
+          <svg class="wheel-ring" viewBox="-150 -150 300 300">
+            <circle r="132"/>
+            <g class="wheel-n">
+              <text x="0" y="-118">1</text><text x="112.2" y="-36.5">2</text><text x="69.4" y="95.5">3</text><text x="-69.4" y="95.5">4</text><text x="-112.2" y="-36.5">5</text>
+            </g>
+          </svg>
+          <div class="wheel-crest" id="wheel-crest">
+            <svg viewBox="-150 -150 300 300">
+              <g transform="rotate(0)"><use class="wheel-le" data-le="1" href="#le"/></g>
+              <g transform="rotate(72)"><use class="wheel-le" data-le="2" href="#le"/></g>
+              <g transform="rotate(144)"><use class="wheel-le" data-le="3" href="#le"/></g>
+              <g transform="rotate(216)"><use class="wheel-le" data-le="4" href="#le"/></g>
+              <g transform="rotate(288)"><use class="wheel-le" data-le="5" href="#le"/></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Every name and number in the screenshots is made up for the demo. Presenting: <kbd>P</kbd>,
+      then <kbd>→</kbd> <kbd>←</kbd>, <kbd>F</kbd> full screen, <kbd>Esc</kbd> to leave.</p>
+  </div>
+</footer>
+
+<div class="hud" id="hud" hidden>
+  <button type="button" class="hud-btn" id="hud-prev" aria-label="Previous section">←</button>
+  <span class="hud-count" id="hud-count" aria-live="polite"></span>
+  <button type="button" class="hud-btn" id="hud-next" aria-label="Next section">→</button>
+  <button type="button" class="hud-btn hud-exit" id="hud-exit">Esc</button>
+</div>
+
+<script src="pitch.js"></script>
+</body>
+</html>

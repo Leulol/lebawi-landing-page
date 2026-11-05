@@ -1,0 +1,5 @@
+# Only the page and what it loads are published.
+README.md
+CLAUDE.md
+tools/
+.github/
